@@ -7,16 +7,20 @@ input{
 
 ::placeholder{
     font-size: small !important;
-    padding: 12px;
+    padding: 12px !important;
 }
-
+option , select{
+    font-size: small !important;
+    padding: 0px 12px !important;
+    color: gray !important;
+}
 .gender{
     border: none!important;
     width: 80% !important;
     height: 85% !important;
 }
 
-div.gdiv{
+div.gdiv , select{
     border: 1px solid rgb(197, 197, 197) !important;
     border-radius: 5px !important;
     width: 90% !important;
