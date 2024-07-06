@@ -1,0 +1,36 @@
+input{
+    border: 1px solid rgb(197, 197, 197) !important;
+    border-radius: 5px !important;
+    width: 90% !important;
+    height: 85% !important;
+}
+
+::placeholder{
+    font-size: small !important;
+    padding: 12px;
+}
+
+.gender{
+    border: none!important;
+    width: 80% !important;
+    height: 85% !important;
+}
+
+div.gdiv{
+    border: 1px solid rgb(197, 197, 197) !important;
+    border-radius: 5px !important;
+    width: 90% !important;
+    height: 85% !important;
+}
+
+label{
+    font-size: small !important;
+}
+div.edit{
+    color: #5DCAD4;
+    width: fit-content;
+}
+
+div.pDetails{
+    font-weight: 600 !important;
+}

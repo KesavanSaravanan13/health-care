@@ -1,0 +1,15 @@
+.profile{
+    height: fit-content !important;
+    font-weight: 500;
+    font-size: larger;
+}
+.FirstRow{
+    height: 50px !important;
+}
+.thirdRow{
+    height: 50px !important;
+}
+.fourthrow{
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 10px;
+}

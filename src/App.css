@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +37,16 @@
     transform: rotate(360deg);
   }
 }
+
+.sideb{
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}
+
+/* 
+.maincol{
+  position: relative;
+  top: 0;
+  left: 88px;
+} */

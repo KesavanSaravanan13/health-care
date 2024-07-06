@@ -1,0 +1,37 @@
+.bell{
+    background-color: #dee1e3 !important;
+}
+.topblock{
+    background-color: #f7fafc;
+    border-radius: 5px;
+}
+.badge{
+    background-color: #5dcad4;
+    top:6px !important;
+    font-size: 10px !important; 
+    padding: 2.5px 5px !important;
+}
+
+.row1{
+    width: 230px !important;
+}
+
+.name1{
+    font-size: small !important;
+    font-weight: 600;
+}
+.name2{
+    font-size: x-small !important;
+    font-weight: 300;
+}
+.dropdown-toggle::after{
+    display: none !important; 
+}
+
+.tt{
+    font-size: small !important;
+}
+
+/* .dmenu{
+    width: 200px !important;
+} */
