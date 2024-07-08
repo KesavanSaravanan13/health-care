@@ -23,7 +23,7 @@ option , select{
 div.gdiv , select{
     border: 1px solid rgb(197, 197, 197) !important;
     border-radius: 5px !important;
-    width: 90% !important;
+    /* width: 90% !important; */
     height: 85% !important;
 }
 
@@ -37,4 +37,7 @@ div.edit{
 
 div.pDetails{
     font-weight: 600 !important;
+}
+.editBtn{
+    width: 70px !important;
 }
