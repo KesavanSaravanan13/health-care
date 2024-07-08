@@ -3,11 +3,11 @@ input{
     border-radius: 5px !important;
     width: 90% !important;
     height: 85% !important;
+    padding-left: 15px !important;
 }
 
 ::placeholder{
     font-size: small !important;
-    padding: 12px !important;
 }
 option , select{
     font-size: small !important;
@@ -40,4 +40,43 @@ div.pDetails{
 }
 .editBtn{
     width: 70px !important;
+    border: none !important
+
+}
+.editBtn:hover{
+    box-shadow: 0px 0px 20px 3px #5DCAD4 !important;
+    border: none !important;
+}
+.editBtn:focus{
+    border: none !important;
+}
+
+input:hover , input:focus , select:focus , select:hover{
+    border-color: #5DCAD4 !important;
+    outline-color: #5DCAD4 !important;
+    box-shadow: none !important;
+}
+
+.dobinput , .dobinput:focus , .dobinput:hover{
+    outline: none !important;
+    border: none !important;
+}
+
+option{
+    width: 10% !important;
+}
+.saveBtn{
+    background-color: #5dcad4;
+    color: white;
+    width: 80px !important;
+    border: 1px solid #5dcad4;
+    border-radius: 5px;
+}
+
+#submitBtn{
+    display: none;
+}
+
+input:disabled{
+    background-color: white;
 }

@@ -21,36 +21,39 @@ const TopRow = () => {
                 </button>
             </div>
             <div className='col-1 m-0 p-0 vr'></div>
-            <div className="col-8 m-0 p-0 flex-fill">
-                <Dropdown>
-                    <DropdownToggle variant='bg-light' className=''>
+            <div className="col-7 m-0 p-0 flex-fill ps-2">
+                <Dropdown className='m-0 p-0 '>
+                    <DropdownToggle variant='bg-light' className='m-0 p-0 w-100 dropdown'>
                         <div className='row m-0 p-0 d-flex justify-content-between'>
-                            <img src={doc} className='col-5 m-0 p-0'></img>
-                            <div className='col-5 m-0 p-0'>
-                                <div className='col-12 m-0 p-0 name1'>Jessica</div>
-                                <div className='col-12 m-0 p-0 name2'>admin</div>
+                            <div className='col-10 m-0 p-0 d-flex justify-content-start'>
+                                <img src={doc} className='col-4 m-0 p-0'></img>
+                                <div className='col-6 m-0 p-0'>
+                                    <div className='col-12 m-0 p-0 name1'>Jessica</div>
+                                    <div className='col-12 m-0 p-0 name2'>admin</div>
+                                </div>
                             </div>
-                            <div className='col-1 p-0 ps-3 m-0 text-center'>
+                            <div className='col-1 p-0 m-0 text-center me-2'>
                                 <img src={dropdown} class="m-0 p-0"
                                     width="15px" height="15px" alt=""></img>
                             </div>
                         </div>
+
                     </DropdownToggle>
 
                     <Dropdown.Menu className='p-0 m-0 dmenu'>
-                        <Dropdown.Item href="" className='p-2 m-0'>
+                        <Dropdown.Item href="" className='p-2 ps-1 m-0'>
                             <div className='row p-0 m-0 flex-nowrap'>
                                 <div className='col-2 m-0 ms-1 p-0'><img src={profile} className='m-0 p-0'></img></div>
                                 <div className='col-10 m-0 p-0 ps-3 tt'>My Profile</div>
                             </div>
                         </Dropdown.Item>
-                        <Dropdown.Item href="" className='p-2 m-0'>
+                        <Dropdown.Item href="" className='p-2 m-0 ps-1'>
                             <div className='row p-0 m-0 flex-nowrap'>
                                 <div className='col-2 m-0 ms-1 p-0'><img src={password} className='m-0 p-0'></img></div>
                                 <div className='col-10 m-0 p-0 ps-1 tt'>Change Password</div>
                             </div>
                         </Dropdown.Item>
-                        <Dropdown.Item href="" className='p-2 m-0'>
+                        <Dropdown.Item href="" className='p-2 m-0 ps-1'>
                             <div className='row p-0 m-0 flex-nowrap'>
                                 <div className='col-2 m-0 p-0'><img src={logout} className='m-0 p-0' width={24} height={24}></img></div>
                                 <div className='col-10 m-0 p-0 ps-3 tt'>Log out</div>
@@ -58,10 +61,6 @@ const TopRow = () => {
                         </Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-                {/* <div className='dropdown m-0 p-0'>
-                    
-                </div> */}
-
             </div>
         </div>
     );
