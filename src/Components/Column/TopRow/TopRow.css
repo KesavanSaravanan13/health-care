@@ -1,9 +1,10 @@
 .bell{
     background-color: #dee1e3 !important;
 }
-.topblock{
-    background-color: #f7fafc;
+.topB{
+    background-color: #f7fafc !important;
     border-radius: 5px;
+    height: 55px !important;
 }
 .badge{
     background-color: #5dcad4;

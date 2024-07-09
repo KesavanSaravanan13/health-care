@@ -1,4 +1,3 @@
-import ActiveBar from '../ActiveBar/ActiveBar';
 import './Submit.css';
 
 const Submit = () => {

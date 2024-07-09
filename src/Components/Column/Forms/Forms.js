@@ -5,8 +5,8 @@ import dob from '../assets/dob.png';
 import { useState } from 'react';
 import Save from './Submit';
 import Props from '../../Toast/Toast';
-
-import doc from '../assets/doc.jpg';
+import ActiveBar from '../ActiveBar/ActiveBar';
+import TopRow from '../TopRow/TopRow';
 
 const Forms = () => {
     const [inputFirstName, setinputFirstName] = useState('Jessica');
@@ -43,24 +43,14 @@ const Forms = () => {
         setinputPostalCode(event.target.value);
     }
     return (
-        <div className='m-0 p-0 pb-5'>
-            <div className="row topblock p-0 py-2 my-4 m-0">
-                <div className='col-12 m-0 p-0 '>
-                    <div className='row m-0 p-0'>
-                        <div className='col-1 m-0 p-0 px-2 docimg'><img src={doc} className='igg' width={70} height={64}></img></div>
-                        <div className='col-5 m-0 p-0 px-2'>
-                            <div className='col-12 m-0 p-0 name01 d-flex align-items-center nn'>{inputFirstName}</div>
-                            <div className='col-12 m-0 p-0 name02 d-flex align-items-center nn'>{inputMail}</div>
-                        </div>
-                        <div className='col py-2 py-sm-0 p-0 m-0 d-flex justify-content-start justify-content-sm-end align-items-center pe-md-3 pe-2'>
-                            <span className='m-0 p-0 px-3 active'>Active</span>
-                        </div>
-                    </div>
-                </div>
-
+        <div className='col-12 m-0 p-0 pb-5'>
+            <div className="row p-0 m-0 justify-content-end FirstRow flex-wrap">
+                <TopRow name={inputFirstName}/>
             </div>
-            <div className='row m-0 p-0 downBlock flex-wrap'>
-                <forms className="m-0 p-3 pt-4 pb-5" id="formEle">
+            <div className="row p-0 py-2 pt-4 m-0 profile">Profile</div>
+            <ActiveBar name={inputFirstName} mail={inputMail}/>
+            <div className='m-0 p-3 downBlock pb-5'>
+                <forms className="m-0 p-0" id="formEle">
                     <div className='row m-0 p-0'>
                         <div className='col-8 m-0 p-0 flex-grow-1 pDetails'>Personal Details</div>
                         <div className='col-4 m-0 p-0 text-end'>
