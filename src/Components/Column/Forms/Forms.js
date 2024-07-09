@@ -4,7 +4,7 @@ import dropdown from '../assets/dropdown_arrow.webp';
 import dob from '../assets/dob.png';
 import { useState } from 'react';
 import Submit from './Submit';
-import Pops from '../../Toast/Toast';
+import Props from '../../Toast/Toast';
 
 const Forms = () => {
     const [inputFirstName, setinputFirstName] = useState('');
@@ -47,7 +47,7 @@ const Forms = () => {
                     <div className='col-8 m-0 p-0 flex-grow-1 pDetails'>Personal Details</div>
                     <div className='col-4 m-0 p-0 text-end'>
                         <button className='m-0 p-0 btn editBtn' onClick={() => {
-                            <Pops />
+                            <Props message='Edit is Enabled!!!'/>
                             alert(`You have Enabled the EDIT!!!`);
                             var inputs = document.querySelectorAll("#formEle input");
 
@@ -101,27 +101,27 @@ const Forms = () => {
                     </div>
                     <div className='col-12 col-md-4 col-lg-4 m-0 p-2 py-3'>
                         <label className='col-12 m-0 p-0 pb-2'>Phone Number</label>
-                        <input type="number" className='col-12 m-0 w-100' disabled placeholder='Enter the Phone Number' value={inputNumber} onChange={handleNumber}></input>
+                        <input type="number" className='col-12 m-0 w-100' disabled placeholder='Phone Number' value={inputNumber} onChange={handleNumber}></input>
                     </div>
                 </div>
                 <div className='row m-0 p-0'>
                     <div className='col-12 col-md-4 col-lg-4 m-0 p-2 py-3'>
                         <label className='col-12 m-0 p-0 pb-2'>Address</label>
-                        <input type=" text" className='col-12 m-0 w-100' disabled placeholder='Enter the Address' value={inputAddress} onChange={handleAddress}></input>
+                        <input type=" text" className='col-12 m-0 w-100' disabled placeholder='Address' value={inputAddress} onChange={handleAddress}></input>
                     </div>
                     <div className='col-12 col-md-4 col-lg-4 m-0 p-2 py-3'>
                         <label className='col-12 m-0 p-0 pb-2'>City</label>
-                        <input type=" text" className='col-12 m-0 w-100' disabled placeholder='Enter the City' value={inputCity} onChange={handleCity}></input>
+                        <input type=" text" className='col-12 m-0 w-100' disabled placeholder='City' value={inputCity} onChange={handleCity}></input>
                     </div>
                     <div className='col-12 col-md-4 col-lg-4 m-0 p-2 py-3'>
                         <label className='col-12 m-0 p-0 pb-2'>State</label>
-                        <input type=" text" className='col-12 m-0 w-100' disabled placeholder='Enter the State' value={inputState} onChange={handleState}></input>
+                        <input type=" text" className='col-12 m-0 w-100' disabled placeholder='State' value={inputState} onChange={handleState}></input>
                     </div>
                 </div>
                 <div className='row m-0 p-0'>
                     <div className='col-12 col-md-4 col-lg-4 m-0 p-2 py-3'>
                         <label className='col-12 m-0 p-0 pb-2'>Postal code</label>
-                        <input type=" text" className='col-12 m-0 w-100' disabled placeholder='Enter the pincode' value={inputPostalCode} onChange={handlePostalCode}></input>
+                        <input type=" text" className='col-12 m-0 w-100' disabled placeholder='Pincode' value={inputPostalCode} onChange={handlePostalCode}></input>
                     </div>
                 </div>
                 <Submit id='submitBtn' />
