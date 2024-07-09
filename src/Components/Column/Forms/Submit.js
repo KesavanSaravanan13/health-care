@@ -1,6 +1,8 @@
 import './Submit.css';
 
-const Submit = () => {
+let n;
+let m;
+const Submit = (props) => {
     return (
         <div className='m-0 p-0 row justify-content-end' id='submitBtn' onClick={
             () => {
@@ -10,7 +12,9 @@ const Submit = () => {
                 inputs.forEach(function (input) {
                     input.disabled = true;
                 });
-                
+                n=props.name;
+                m=props.email
+
                 document.getElementById("submitBtn").style.display='none';
                
             }
@@ -18,6 +22,11 @@ const Submit = () => {
             <button type="buttton" value="Save" className="m-0 p-2 saveBtn" >Save</button>
         </div>
     );
+}
+
+function submit(){
+
+    return {n,m};
 }
 
 export default Submit;
