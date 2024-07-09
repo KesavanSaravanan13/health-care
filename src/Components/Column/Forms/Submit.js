@@ -1,3 +1,4 @@
+import ActiveBar from '../ActiveBar/ActiveBar';
 import './Submit.css';
 
 const Submit = () => {
@@ -12,6 +13,7 @@ const Submit = () => {
                 });
                 
                 document.getElementById("submitBtn").style.display='none';
+               
             }
         }>
             <button type="buttton" value="Save" className="m-0 p-2 saveBtn" >Save</button>

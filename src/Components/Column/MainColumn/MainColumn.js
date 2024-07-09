@@ -6,14 +6,14 @@ import './MainColumn.css';
 const MainColumn = () => {
     return(
         <div className="row m-0 p-2 p-md-4">
-            <div className="row p-0 m-0 justify-content-end FirstRow">
+            <div className="row p-0 m-0 justify-content-end FirstRow flex-wrap">
                 <TopRow/>
             </div>
             <div className="row p-0 py-2 pt-4 m-0 profile">Profile</div>
-            <div className="row p-0 py-2 m-0 thirdrow">
+            {/* <div className="row p-0 py-2 m-0 thirdrow">
                 <ActiveBar></ActiveBar>
-            </div>
-            <div className="row p-0 my-3 m-0 fourthrow">
+            </div> */}
+            <div className="row p-0 m-0 fourthrow">
                 <Forms></Forms>
             </div>
         </div>
